@@ -18,9 +18,12 @@ A Plugin For chartist.js that allow the user to across the x axis of the chart.
                 }
             },
             plugins: [
-                chartistScroll({ height: "8px" })
+                chartistScroll( { 
+                      height: "8px",
+                      width: "15px", 
+                      scrollbarColor: "red"
+                 })
             ]
-
         };
 
         var renderedChart = new Chartist.Line('.ct-chart', {
